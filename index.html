@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ajax Research Lab — Local Competitor Snapshot (48 hours)</title>
+  <meta name="description" content="No-meetings, async competitor research for local businesses. Pay once. Delivered in 48 hours." />
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#0f1722; --text:#e8eef6; --muted:#a9b4c0; --accent:#6ae4ff; --accent2:#9cff6a;
+      --border:rgba(255,255,255,.10);
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background:var(--bg); color:var(--text);}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px; margin:0 auto; padding:28px 18px 60px;}
+    .hero{padding:26px 18px; border:1px solid var(--border); background:linear-gradient(180deg, rgba(106,228,255,.10), rgba(156,255,106,.05)); border-radius:16px;}
+    .kicker{color:var(--muted); font-weight:600; letter-spacing:.06em; text-transform:uppercase; font-size:12px}
+    h1{margin:10px 0 8px; font-size:40px; line-height:1.05}
+    .sub{color:var(--muted); font-size:18px; line-height:1.5; margin:0 0 18px}
+    .ctaRow{display:flex; flex-wrap:wrap; gap:12px; margin-top:14px}
+    .btn{display:inline-block; padding:12px 14px; border-radius:12px; border:1px solid var(--border); background:rgba(255,255,255,.06); color:var(--text); font-weight:700}
+    .btnPrimary{background:rgba(106,228,255,.15); border-color:rgba(106,228,255,.35)}
+    .btnGood{background:rgba(156,255,106,.12); border-color:rgba(156,255,106,.35)}
+    .grid{display:grid; grid-template-columns:repeat(12, 1fr); gap:14px; margin-top:18px}
+    .card{grid-column:span 12; border:1px solid var(--border); background:var(--card); border-radius:16px; padding:16px}
+    @media (min-width:820px){
+      .card.half{grid-column:span 6}
+      .card.third{grid-column:span 4}
+    }
+    h2{margin:0 0 10px; font-size:18px}
+    ul{margin:10px 0 0 18px; color:var(--muted); line-height:1.6}
+    .price{font-size:34px; font-weight:900; margin:4px 0 6px}
+    .fine{color:var(--muted); font-size:13px; line-height:1.5}
+    .hr{height:1px; background:var(--border); margin:14px 0}
+    code{background:rgba(255,255,255,.07); padding:2px 6px; border-radius:8px}
+    footer{margin-top:22px; color:var(--muted); font-size:12px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="hero">
+      <div class="kicker">No meetings • Async • 48-hour turnaround</div>
+      <h1>Ajax Research Lab</h1>
+      <p class="sub">
+        A productized competitor research brief for local businesses.
+        You pay once, fill out a short intake form, and you receive a clean, actionable snapshot within <strong>48 hours</strong>.
+      </p>
+
+      <div class="ctaRow">
+        <a class="btn btnPrimary" href="#buy">Pay $149 (PayPal)</a>
+        <a class="btn" href="#intake">Fill intake form</a>
+        <a class="btn btnGood" href="mailto:ajaxassistantai@gmail.com?subject=Ajax%20Research%20Lab%20%E2%80%94%20Question">Email Ajax</a>
+      </div>
+      <p class="fine" style="margin-top:10px">Email: <code>ajaxassistantai@gmail.com</code> • Delivery: Google Doc + PDF • No calls.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card half">
+        <h2>What you get</h2>
+        <ul>
+          <li>Top 10 local competitors (links + notes)</li>
+          <li>Offer/pricing comparison (as publicly available)</li>
+          <li>Review themes: what customers praise/complain about</li>
+          <li>SEO/content angles competitors are using</li>
+          <li>Messaging swipe file (headlines, offers, hooks)</li>
+          <li>5 next actions to win locally (prioritized)</li>
+        </ul>
+      </div>
+
+      <div class="card half" id="buy">
+        <h2>Local Competitor Snapshot</h2>
+        <div class="price">$149</div>
+        <div class="fine">One-time payment • Delivered within 48 hours after payment + completed intake.</div>
+        <div class="hr"></div>
+
+        <p style="margin:0 0 10px; color:var(--muted)">
+          Payment is handled via PayPal.
+        </p>
+
+        <!--
+          TODO: Replace PAYPAL_LINK with your PayPal payment link.
+          You can use:
+          - PayPal.me link (if you create one)
+          - or a hosted PayPal button/link
+        -->
+        <div id="paypal-container-SP7RHKEJGVRF8"></div>
+        <script src="https://www.paypal.com/sdk/js?client-id=BAAf7IZX94-gpX8njTepqdqy-QzyLGzDh5UKy0HsJvdllKHYoJQoUgXt8kJav4SdTp2x8Pf-sRURngb1No&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+        <script>
+          paypal.HostedButtons({ hostedButtonId: "SP7RHKEJGVRF8" }).render("#paypal-container-SP7RHKEJGVRF8");
+        </script>
+        <p class="fine" style="margin-top:10px">
+          If the link doesn’t work, email us and we’ll send a manual invoice.
+        </p>
+      </div>
+
+      <div class="card third" id="intake">
+        <h2>How it works</h2>
+        <ul>
+          <li>1) Pay</li>
+          <li>2) Complete the intake form</li>
+          <li>3) We deliver your brief within 48 hours</li>
+        </ul>
+      </div>
+
+      <div class="card third">
+        <h2>Policies</h2>
+        <ul>
+          <li>No meetings / no calls</li>
+          <li>Async via email only</li>
+          <li>Refunds: if we miss deadline, you can request a full refund</li>
+        </ul>
+      </div>
+
+      <div class="card third">
+        <h2>What we need from you</h2>
+        <ul>
+          <li>Your business website (or Google Business Profile)</li>
+          <li>Your service area (city/region)</li>
+          <li>3 competitors you already know (optional)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Intake form link</h2>
+        <p class="fine">Fill this out right after payment so we can start immediately.</p>
+        <p><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSe7qbaePzOSv7QknzDaYJX_V2N3OcVfV1X4_pDLIdCBO99W9A/viewform?usp=dialog" target="_blank" rel="noopener">Open intake form</a></p>
+      </div>
+
+      <div class="card">
+        <h2>Contact</h2>
+        <p class="fine">Email: <a href="mailto:ajaxassistantai@gmail.com">ajaxassistantai@gmail.com</a></p>
+      </div>
+    </div>
+
+    <footer>
+      © <span id="y"></span> Ajax Research Lab. Built to be simple, fast, and fully async.
+    </footer>
+
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
