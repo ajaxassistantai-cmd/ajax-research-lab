@@ -1,0 +1,29 @@
+:root{
+  --bg:#0b0f14; --card:#0f1722; --text:#e8eef6; --muted:#a9b4c0; --accent:#6ae4ff; --accent2:#9cff6a;
+  --border:rgba(255,255,255,.10);
+}
+*{box-sizing:border-box}
+body{margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background:var(--bg); color:var(--text);}
+a{color:var(--accent); text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:980px; margin:0 auto; padding:22px 18px 60px;}
+.top{display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;}
+.brand{font-weight:900; letter-spacing:.2px;}
+.nav{display:flex; gap:14px;}
+.nav a{color:var(--muted); font-weight:700}
+.nav a.active{color:var(--text)}
+.card{border:1px solid var(--border); background:var(--card); border-radius:16px; padding:18px;}
+.sub{color:var(--muted); font-size:16px; line-height:1.5; margin:8px 0 0;}
+.fine{color:var(--muted); font-size:13px; line-height:1.5;}
+.meta{color:var(--muted); font-size:13px; margin-top:6px;}
+.hr{height:1px; background:var(--border); margin:14px 0;}
+.postList{margin:0; padding-left:18px; color:var(--muted);}
+.postList li{margin:14px 0;}
+.postList a{font-size:18px; font-weight:900; color:var(--text)}
+.article h1{margin:0 0 6px; font-size:34px; line-height:1.1;}
+.article h2{margin:22px 0 8px; font-size:18px;}
+.article p, .article li{color:var(--muted); line-height:1.7; font-size:16px;}
+.article ul{margin-top:8px;}
+.kicker{color:var(--muted); font-weight:700; letter-spacing:.06em; text-transform:uppercase; font-size:12px}
+.callout{border:1px solid rgba(106,228,255,.35); background:rgba(106,228,255,.08); padding:14px; border-radius:14px;}
+.footer{margin-top:18px; color:var(--muted); font-size:12px}
